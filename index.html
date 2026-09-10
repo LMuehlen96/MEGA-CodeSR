@@ -79,8 +79,11 @@ button{font-family:inherit}
 .topbar{
   position:sticky; top:0; z-index:40; background:var(--surface);
   border-bottom:1px solid var(--line); box-shadow:var(--shadow);
+  /* iOS: Inhalt unter Statusleiste/Dynamic Island freihalten */
+  padding-top:env(safe-area-inset-top,0px);
 }
-.topbar-in{display:flex; align-items:center; gap:12px; padding:8px 12px; max-width:960px; margin:0 auto}
+.topbar-in{display:flex; align-items:center; gap:12px; padding:8px 12px; max-width:960px; margin:0 auto;
+  padding-left:max(12px, env(safe-area-inset-left,0px)); padding-right:max(12px, env(safe-area-inset-right,0px))}
 .brand{display:flex; flex-direction:column; line-height:1.1; margin-right:auto}
 .brand b{font-size:14px; letter-spacing:.02em}
 .brand small{font-size:10.5px; color:var(--text-dim); letter-spacing:.06em; text-transform:uppercase}
@@ -135,7 +138,8 @@ button.tmr:active{transform:scale(.98)}
 .ribbon-note{font-size:11px; color:var(--text-dim)}
 
 /* ============ LAYOUT ============ */
-main{max-width:960px; margin:0 auto; padding:14px 12px 24px}
+main{max-width:960px; margin:0 auto; padding:14px 12px 24px;
+  padding-left:max(12px, env(safe-area-inset-left,0px)); padding-right:max(12px, env(safe-area-inset-right,0px))}
 .view{display:none}
 .view.active{display:block; animation:fade .18s ease}
 @keyframes fade{from{opacity:.4}to{opacity:1}}
@@ -309,7 +313,8 @@ textarea{resize:vertical; min-height:64px}
 /* ============ BOTTOM NAV ============ */
 .tabbar{
   position:fixed; bottom:0; left:0; right:0; z-index:50; background:var(--surface);
-  border-top:1px solid var(--line); display:flex; padding:5px 4px calc(5px + env(safe-area-inset-bottom));
+  border-top:1px solid var(--line); display:flex;
+  padding:5px max(4px,env(safe-area-inset-right,0px)) calc(5px + env(safe-area-inset-bottom,0px)) max(4px,env(safe-area-inset-left,0px));
   box-shadow:0 -2px 14px rgba(16,33,51,.08);
 }
 .tabbar button{flex:1; border:0; background:transparent; color:var(--text-dim); cursor:pointer; padding:5px 2px 3px; display:flex; flex-direction:column; align-items:center; gap:2px; font-size:10px; font-weight:600; border-radius:10px; position:relative}
