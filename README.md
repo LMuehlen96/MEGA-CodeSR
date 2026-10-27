@@ -13,3 +13,7 @@ Präklinische Reanimationsabfrage · eCPR-/ECMO-Pfad · geführter Ablauf PR_E-A
 
 ## Wichtiger Hinweis
 Prototyp – **kein Medizinprodukt**. Dosierungen sind Orientierung; die **lokale SOP hat Vorrang**. Keine Speicherung langfristiger Patientendaten (nur Schockraumphase, lokal).
+
+
+## Weitere App: SR-Doku
+Allgemeine Schockraumdokumentation ((PR_E-)AUD²IT · SINNHAFT-Übergabe, PDF-Export per Mail): https://LMuehlen96.github.io/MEGA-CodeSR/sr-doku/
