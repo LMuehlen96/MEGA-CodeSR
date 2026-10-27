@@ -16,4 +16,4 @@ Prototyp – **kein Medizinprodukt**. Dosierungen sind Orientierung; die **lokal
 
 
 ## Weitere App: SR-Doku
-Allgemeine Schockraumdokumentation ((PR_E-)AUD²IT · SINNHAFT-Übergabe, PDF-Export per Mail): https://LMuehlen96.github.io/MEGA-CodeSR/sr-doku/
+Allgemeine Schockraumdokumentation ((PR_E-)AUD²IT · SINNHAFT-Übergabe, PDF-Export per Mail): https://LMuehlen96.github.io/SR-Doku/ (Repo: https://github.com/LMuehlen96/SR-Doku)
